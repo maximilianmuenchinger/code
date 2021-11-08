@@ -154,4 +154,4 @@ async function submitVerarbeiten1() {
     let response = await fetch(url);
     console.log(response);
 }
-//# sourceMappingURL=warenkorb.js.map
+//# sourceMappingURL=tunierscipt.js.map
