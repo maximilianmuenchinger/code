@@ -5,20 +5,20 @@
   "main": "index.js",
   "dependencies": {
     "@types/mongodb": "^3.5.25",
-    "mongodb" : "^3.5.9"
+    "mongodb": "^3.5.9"
   },
   "devDependencies": {},
   "scripts": {
-    
-    "start": "node code/server.js"
+    "start": "node server.js"
   },
-"repository": {
-  "type": "git",
-  "url": "git+https://github.com/maximilianmuenchinger/code"
-},
-
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximilianmuenchinger/code"
+  },
   "author": "maximilian muenchinger",
   "license": "ISC",
-  "bugs": {"url": "https://github.com/maximilianmuenchinger/code/issus"},
+  "bugs": {
+    "url": "https://github.com/maximilianmuenchinger/code/issus"
+  },
   "homepage": "https://github.com/maximilianmuenchinger/code#readme"
 }
