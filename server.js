@@ -41,9 +41,19 @@ var Endabgabe;
 
         //Test
        
-            var dbo = db.db("mydb");
-            var myobj = { name: "Company Inc", address: "Highway 37" };
-            dbo.db("Test2").collection("Test2");
+        var MongoClient = require('mongodb').MongoClient;
+        var url = "mongodb+srv://User1:F8bHZC2XgkJ9Pekl@maxscluster.juvc9.mongodb.net/<dbname>?retryWrites=true&w=majority";
+        
+        MongoClient.connect(url, function(err, db) {
+          if (err) throw err;
+          var dbo = db.db("Test2");
+          var myobj = { name: "Company Inc", address: "Highway 37" };
+          dbo.collection("Test2").insertOne(myobj, function(err, res) {
+            if (err) throw err;
+            console.log("1 document inserted");
+            db.close();
+          });
+        });
           //testende
 
 
