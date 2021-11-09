@@ -151,7 +151,11 @@ async function submitVerarbeiten1() {
     let query = new URLSearchParams(formData);
     let query2 = new URLSearchParams(stringFormData1);
     url += "?" + query.toString() + query2;
-    let response = await fetch(url);
+    let response = await (await fetch(url)).text();
     console.log(response);
+
+
+
+
 }
 //# sourceMappingURL=tunierscipt.js.map
