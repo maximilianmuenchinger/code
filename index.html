@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<html lang="en">
+<head>
+    <script src="scripts.js"></script>
+    <title>Pong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+  <section>
+    <h1> Pongqueue </h1>
+    <p> Kein Bock mehr auf Stress wer als nächstes spielt? Tragt euch hier ein uns wisst immer, wer die nächste Runde gecalled hat! </p>
+  </section>
+
+
+  
+  <div class="nav">
+    <label for="toggle">&#9776;</label> 
+    <input type="checkbox" id="toggle">
+    
+    <div class="menu">
+        <a href="#Anker1">Coronaartikel</a>
+        <a href="#Anker2">Schuhe</a>
+    </div>
+    </div>
+
+
+
+
+    <form>
+
+     <div class="group">
+        <label for = "namen1"> Team 1: <br/ >
+         <input  id="namen1" type="text" onkeyup="success()" name="Team1" placeholder="Spieler 1, Spieler 2">
+       </label>
+
+     </div>
+
+     <div class="group">
+        <label for = "namen2"> Team 2: <br/ >
+          <input  id="namen2" type="text" onkeyup="success()" name="Team2" placeholder="Spieler 1, Spieler 2">
+        </label>
+
+    </div>
+
+    </form>
+
+<p></p>
+
+    <input class="button1" id="button1" type="button" value="abschicken" onclick="namenList(); namen1.value=''; namen2.value=''" disabled/>
+    <input class="button2" type="button" value="leeren" onclick="leeren();" />
+
+    <input class="button3" type="button" value="Runde gespielt " onclick="loschen();" />
+
+<p></p>
+
+    <div class="liste" id="12"></div>
+
+
+
+
+</body>
+
+
+</html>
