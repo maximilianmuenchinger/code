@@ -152,22 +152,13 @@ async function submitVerarbeiten1() {
     let query2 = new URLSearchParams(stringFormData1);
     url += "?" + query.toString() + query2;
     let response = await fetch(url);
-    let split = response.split("},");
-    console.log(split);
+    let answer = await response.text();
+    let split = answer.split("},");
+console.log(split);
     
 }
 
 
-"use strict";
-empfangen1();
-
-async function empfangen1() {
-    let url = "https://pongalong.herokuapp.com/senden";
-    let response2 = await fetch(url);
-    let answer = await response2.text();
-    let split = answer.split("},");
-console.log(split);
-}
 
 
 
