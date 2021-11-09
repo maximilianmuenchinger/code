@@ -154,7 +154,7 @@ async function submitVerarbeiten1() {
     let response = await fetch(url);
     let answer = await response.text();
     //let split = answer.split("},");
-console.log(split);
+console.log(answer);
     
 }
 
