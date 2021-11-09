@@ -153,11 +153,12 @@ async function submitVerarbeiten1() {
     url += "?" + query.toString() + query2;
     let response = await fetch(url);
     console.log(response);
+    empfangen1();
 }
 
 
 
-empfangen1();
+
 async function empfangen1() {
     let url = "https://pongalong.herokuapp.com/";
     let response2 = await fetch(url);
