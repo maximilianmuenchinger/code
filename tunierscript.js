@@ -146,7 +146,7 @@ document.getElementById("auslosungErgebnis").appendChild(auslosung);
 async function submitVerarbeiten1() {
     let formData = new FormData(document.forms[0]);
     let string = localStorage.getItem("storage1");
-    let stringFormData1 = formData.append("Bestellung", string);
+    let stringFormData1 = formData.append(string);
     let url = "https://pongalong1.herokuapp.com/senden";
     let query = new URLSearchParams(formData);
     let query2 = new URLSearchParams(stringFormData1);
