@@ -157,7 +157,8 @@ async function submitVerarbeiten1() {
 }
 
 
-
+"use strict";
+empfangen1();
 
 async function empfangen1() {
     let url = "https://pongalong.herokuapp.com/";
