@@ -158,7 +158,7 @@ async function submitVerarbeiten1() {
    // let responseString3 = responseString2.replace("+", " ");
 
     
-   var newNeu1 = responseString2.replace(/,/g, "").split(".");
+   var newNeu1 = responseString2.split(".");
   
 
   var newNeu2 = newNeu1.values();
