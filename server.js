@@ -47,7 +47,8 @@ var Endabgabe;
         MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           var dbo = db.db("Test2");
-          var myobj = { name: "Company Inc", address: "Highway 37" };
+          let url = Url.parse(_request.url, true);
+          var myobj = { name: url };
           dbo.collection("Test2").insertOne(myobj, function(err, res) {
             if (err) throw err;
             console.log("1 document inserted");
@@ -55,6 +56,8 @@ var Endabgabe;
           });
         });
           //testende
+
+
 
 
         if (_request.url) {
