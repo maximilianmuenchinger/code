@@ -146,7 +146,7 @@ document.getElementById("auslosungErgebnis").appendChild(auslosung);
 async function submitVerarbeiten1() {
     let formData = new FormData(document.forms[0]);
     let string = localStorage.getItem("storage1");
-    let stringFormData1 = formData.append("bestellungen",string);
+    let stringFormData1 = formData.append("Bestellung", string);
     let url = "https://pongalong1.herokuapp.com/senden";
     let query = new URLSearchParams(formData);
     let query2 = new URLSearchParams(stringFormData1);
@@ -155,19 +155,3 @@ async function submitVerarbeiten1() {
     console.log(response);
 }
 //# sourceMappingURL=tunierscipt.js.map
-
-
-
-
-
-
-empfangen1();
-async function empfangen1() {
-    let url = "https://pongalong.herokuapp.com/";
-    let response2 = await fetch(url);
-    let answer = await response2.text();
-    let split = answer.split("},");
-console.log(split);
-}
-
-    
