@@ -152,7 +152,7 @@ async function submitVerarbeiten1() {
     let query2 = new URLSearchParams(stringFormData1);
     url += "?" + query.toString() + query2;
     let response = await fetch(url);
-    let answer = response.text();
+    let answer = response.toString();
     //let split = answer.split("},");
 console.log(answer);
     
