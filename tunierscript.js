@@ -153,7 +153,7 @@ async function submitVerarbeiten1() {
     url += "?" + query.toString() + query2;
     let response = await fetch(url);
     console.log(response);
-    empfangen1();
+    
 }
 
 
