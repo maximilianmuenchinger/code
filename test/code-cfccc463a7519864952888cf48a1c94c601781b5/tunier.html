@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tunierscript.js"></script>
+    <script src="server.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="group">
+        <label for = "namen1"> Team 1: <br >
+         <input  id="namen1" type="text" name="Team1" placeholder="Teamname">
+       </label>
+
+     </div>
+
+     <input class="button1" type="button" value="hinzufügen" onclick="hinzufügen();" />
+     <input class="button2" type="button" value="leeren" onclick="leeren1();" />
+
+     <input class="button3" type="button" value="auslosen" onclick="auslosen(), submitVerarbeiten1()" />
+
+<br>
+<br>
+
+<div id="namenFürAuslosung">
+Namen:
+
+</div>
+<br>
+<br>
+
+
+
+     <div id="auslosungErgebnis">
+      Auslosung:
+
+
+     </div>
+
+
+
+
+
+</body>
+</html>
