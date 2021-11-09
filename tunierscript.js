@@ -98,6 +98,9 @@ else{
 
     }
 
+
+
+    //Auf HTML darstellen
     var newNeuString = newNeu.toString();
 
     var newNeu1 = newNeuString.replace(/,/g, "").split(".");
@@ -105,23 +108,10 @@ else{
     var newNeu2 = newNeu1.values();
 
     
-    
+    console.log("hi", newNeuString);
    localStorage.setItem("storage1", newNeuString);
    
     
-    
-
-
-  //  for (let letter of interator) {
-  //      console.log(letter);
-  //    }
-
-
-
-
-
-
-
   for (let letter of newNeu2) {
     
     
@@ -130,6 +120,9 @@ var auslosung = document.createElement("li")
 
 auslosung.innerHTML = letter;
 document.getElementById("auslosungErgebnis").appendChild(auslosung);
+
+
+
   }
 
 
@@ -140,6 +133,9 @@ document.getElementById("auslosungErgebnis").appendChild(auslosung);
     
 
 }
+
+
+
 
 
 //Datenbank und Server
@@ -154,14 +150,42 @@ async function submitVerarbeiten1() {
     let response = await fetch(url);
     let responseUrl = response.url;
     let responseString = responseUrl.replace("https://pongalong1.herokuapp.com/senden?Bestellung=", "");
-    let responseString2 = responseString.replace(/%2C/g, "");
-    let responseString3 = responseString2.replace(/+/g, " ");
+   let responseString2 = responseString.replace(/%2C/g, "");
+  
+
+  console.log(responseString2);
+
+
+
+
+  var newNeu1 = responseString2.replace(/,/g, "").split(".");
+  
+
+  var newNeu2 = newNeu1.values();
+
+  
+
+
+for (let letter of newNeu2) {
+  
+  
+
+var auslosung = document.createElement("li")
+
+var letter2 = letter.replace("+", " ");
+
+auslosung.innerHTML = letter2.replace("+", ' ');
+
+
+
+document.getElementById("auslosungErgebnis2").appendChild(auslosung);
+
 
     
-    console.log(responseString3);
 
 
 
     
+}
 }
 //# sourceMappingURL=tunierscipt.js.map
