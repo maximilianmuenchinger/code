@@ -157,6 +157,7 @@ async function submitVerarbeiten1() {
     let responseString2 = responseString.replace("%2C", "");
     let responseString3 = responseString2.replace("+", " ");
 
+    
     console.log(responseString3);
 
 
