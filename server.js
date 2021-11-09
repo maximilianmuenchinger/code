@@ -35,6 +35,24 @@ var Endabgabe;
         console.log("test1234");
         _response.setHeader("content-type", "text/html; charset=utf-8");
         _response.setHeader("Access-Control-Allow-Origin", "*");
+       
+
+
+
+        //Test
+        MongoClient.connect(url, function(err, db) {
+            if (err) throw err;
+            var dbo = db.db("mydb");
+            var myobj = { name: "Company Inc", address: "Highway 37" };
+            dbo.collection("customers").insertOne(myobj, function(err, res) {
+              if (err) throw err;
+              console.log("1 document inserted");
+              db.close();
+            });
+          });
+          //testende
+
+
         if (_request.url) {
             let url = Url.parse(_request.url, true);
             //Methode die ihr im Praktikum gezeigt habt 
