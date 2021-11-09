@@ -153,7 +153,7 @@ async function submitVerarbeiten1() {
     url += "?" + query.toString() + query2;
     let response = await fetch(url);
     let answer = await response.text();
-    let split = answer.split("},");
+    //let split = answer.split("},");
 console.log(split);
     
 }
