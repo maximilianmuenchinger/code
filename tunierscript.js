@@ -154,8 +154,8 @@ async function submitVerarbeiten1() {
     let response = await fetch(url);
     let responseUrl = response.url;
     let responseString = responseUrl.replace("https://pongalong1.herokuapp.com/senden?Bestellung=", "");
-    let responseString2 = responseString.replace("%2C", "");
-    let responseString3 = responseString2.replace("+", " ");
+    let responseString2 = responseString.replace(/%2C/g, "");
+    let responseString3 = responseString2.replace(/r/g, " ");
 
     
     console.log(responseString3);
