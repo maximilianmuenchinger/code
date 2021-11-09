@@ -184,4 +184,5 @@ document.getElementById("auslosungErgebnis2").appendChild(auslosung);
 
     
 }
+}
 //# sourceMappingURL=tunierscipt.js.map
