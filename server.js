@@ -24,7 +24,7 @@ var Endabgabe;
         let options = { useNewUrlParser: true, useUnifiedTopology: true };
         let mongoClient = new Mongo.MongoClient(_url, options);
         await mongoClient.connect();
-        orders = mongoClient.db("Eisdiele_West").collection("Bestellungen");
+        orders = mongoClient.db("Test2").collection("Test2");
         console.log("Database connection", orders != undefined);
     }
     function handleListen() {
