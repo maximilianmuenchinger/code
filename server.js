@@ -51,7 +51,7 @@ var Endabgabe;
           var myobj = { name: url };
           dbo.collection("Test2").insertOne(myobj, function(err, res) {
             if (err) throw err;
-            console.log(url);
+            console.log("1 document inserted");
             db.close();
           });
         });
