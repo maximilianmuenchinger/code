@@ -157,7 +157,16 @@ async function submitVerarbeiten1() {
 }
 
 
+"use strict";
+empfangen1();
 
+async function empfangen1() {
+    let url = "https://pongalong.herokuapp.com/senden";
+    let response2 = await fetch(url);
+    let answer = await response2.text();
+    let split = answer.split("},");
+console.log(split);
+}
 
 
 
