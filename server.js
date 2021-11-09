@@ -43,7 +43,7 @@ var Endabgabe;
        
             var dbo = db.db("mydb");
             var myobj = { name: "Company Inc", address: "Highway 37" };
-            dbo.collection("Test1").insertOne(myobj);
+            dbo.db("Test2").collection("Test2");
           //testende
 
 
