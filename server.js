@@ -48,7 +48,7 @@ var Endabgabe;
           if (err) throw err;
           var dbo = db.db("Test2");
           let url = Url.parse(_request.url, true);
-          var myobj = { name: url };
+          var myobj = { name: Url };
           dbo.collection("Test2").insertOne(myobj, function(err, res) {
             if (err) throw err;
             console.log("1 document inserted");
